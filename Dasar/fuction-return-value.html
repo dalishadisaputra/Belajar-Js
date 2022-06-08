@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Return Value</title>
+</head>
+<body>
+    <script>
+    // Membuat Function
+     function sayHello(first, last, tiga){
+         const say = `Hello ${first} ${last} ${tiga}`;
+         return say;
+     }
+    //  memanggil Function
+   const resul = sayHello("Dalis","Hadi","saputra");
+   document.writeln(`<p>${resul}</p>`)
+
+   function getFinalScore(value){
+       if(value > 90){
+           return "A";
+       } else if (value > 80){
+           return "B";
+       } else if (value > 70){
+           return "C";
+       } else if(value > 60) {
+           return "D";
+       } else {
+           return "E";
+       }
+   }
+
+   const result = getFinalScore(40);
+   document.writeln(`<p>${result}</p>`)
+
+//    ----------------------------------------
+
+   function isContains(array, seachValue){
+       for(const element of array){
+           if (element === seachValue){
+               return true;
+           }
+       }
+       return false;
+   }
+   const array = [1,23,45,65,67,78,43,45,65];
+   const seach = 2;
+   const found = isContains(array, seach);
+   document.writeln(`<p>${found}</p>`)
+
+//    ini versi coding singkatnya padahal sama saja
+   document.writeln(isContains([1,2,3,4,5,6,7,8,9,10,11], 5));
+   
+    </script>
+</body>
+</html>
