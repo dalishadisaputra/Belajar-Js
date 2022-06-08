@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for IN</title>
+</head>
+<body>
+    <script>
+    const orang = {
+        nama_pertama : "dalis",
+        nama_tengah : "hadi",
+        nama_belakang : "saputra"
+    };
+    for(const propertis in orang){
+        document.writeln(`<p>${propertis} : ${orang[propertis]}</p>`);
+    }
+
+    const names = ["dalis","hadi","saputra"];
+    for(indeks in names){
+        document.writeln(`<p>${indeks}: ${names[indeks]}</p>`);
+    }
+
+    </script>
+</body>
+</html>
